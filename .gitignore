@@ -1,0 +1,12 @@
+*.parquet
+*.csv
+*.zst
+*.pkl
+*.h5
+*.pt
+data/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+results/
+*.log

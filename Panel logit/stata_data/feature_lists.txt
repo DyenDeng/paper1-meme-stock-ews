@@ -1,0 +1,8 @@
+// Model 1: Market features only
+global market_vars returns returns_std returns_mean returns_z volume volume_std volume_mean volume_z trade_count vwap close high low open returns_lag5min volume_lag5min returns_z_lag5min volume_z_lag5min is_official_halt_lag1 is_official_halt_lag2
+
+// Model 2: + Social media aggregate
+global social_agg_vars post_volume comment_volume total_volume post_volume_15min comment_volume_15min total_volume_15min post_velocity comment_velocity unique_users user_growth sentiment_compound sentiment_positive sentiment_negative bullish_keywords bearish_keywords urgency_score is_burst burst_intensity
+
+// Model 3: + Network/coordination
+global network_coord_vars node_count edge_count density avg_degree max_degree avg_betweenness max_betweenness avg_clustering max_k_core avg_pagerank max_pagerank cascade_size_mean cascade_size_max cascade_depth_mean cascade_breadth_mean structural_virality_mean structural_virality_max adoption_speed_mean cascade_count burstiness_coefficient sync_posting_rate inter_arrival_mean inter_arrival_std cross_thread_overlap multi_thread_user_ratio coordinated_group_size exact_duplicate_rate fuzzy_duplicate_rate avg_text_similarity
